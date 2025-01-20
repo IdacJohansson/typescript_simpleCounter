@@ -1,4 +1,6 @@
 "use strict";
+const numberValue = 1;
+const resetValue = 0;
 // Initial count value
 let count = 0;
 // Update the count display
@@ -8,17 +10,17 @@ const updateCountDisplay = () => {
 };
 // Increment the count
 const increment = () => {
-    count += 1;
+    count += numberValue;
     updateCountDisplay();
 };
 // Decrement the count
 const decrement = () => {
-    count -= 1;
+    count -= numberValue;
     updateCountDisplay();
 };
 // Reset the count
 const reset = () => {
-    count = 0;
+    count = resetValue;
     updateCountDisplay();
 };
 // Attach event listeners to buttons
